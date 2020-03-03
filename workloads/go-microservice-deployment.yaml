@@ -1,0 +1,24 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-microservice
+  namespace: rafael-flux
+  labels:
+    app: go-microservice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: go-microservice
+  template:
+    metadata:
+      labels:
+        app: go-microservice
+    spec:
+      containers:
+        - name: go-microservice
+          image: rafaelportela/go-microservice:0.1
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
