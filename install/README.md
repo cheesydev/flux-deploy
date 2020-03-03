@@ -8,7 +8,7 @@ fluxctl install \
   --git-user=cheesybot \
   --git-email=bot@cheesy.dev \
   --git-url=git@github.com:cheesydev/flux-deploy \
-  --git-path=namespaces,workloads \
+  --git-path=workloads \
   --namespace=rafael-flux > flux.yaml
 ```
 

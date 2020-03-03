@@ -198,7 +198,7 @@ spec:
         # https://$(GIT_AUTHUSER):$(GIT_AUTHKEY)@github.com/user/repository.git
         - --git-url=git@github.com:cheesydev/flux-deploy
         - --git-branch=master
-        - --git-path=namespaces,workloads
+        - --git-path=workloads
         - --git-label=flux
         - --git-user=cheesybot
         - --git-email=bot@cheesy.dev
