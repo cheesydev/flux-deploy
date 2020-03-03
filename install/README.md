@@ -35,3 +35,9 @@ Then, install Flux.
 ```
 kubectl apply -f install/flux.yaml
 ```
+
+Finally, don't forget to add the public key in your repo settings to give Flux
+permission to it. You can also get the key value with `fluxctl identity`.
+```
+fluxctl identity --k8s-fwd-ns rafael-flux
+```
