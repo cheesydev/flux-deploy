@@ -6,6 +6,8 @@ metadata:
   namespace: rafael-flux
   labels:
     app: go-microservice
+  annotations:
+    fluxcd.io/automated: 'true'
 spec:
   replicas: 1
   selector:
@@ -17,8 +19,8 @@ spec:
         app: go-microservice
     spec:
       containers:
-        - name: go-microservice
-          image: rafaelportela/go-microservice:0.1
-          imagePullPolicy: IfNotPresent
-          ports:
-            - containerPort: 8080
+      - name: go-microservice
+        image: rafaelportela/go-microservice:0.1
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080
