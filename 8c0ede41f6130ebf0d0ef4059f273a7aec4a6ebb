@@ -1,0 +1,1 @@
+{"jobID":"ea81f9ab-e7be-d59f-c413-e2389f13484f","spec":{"type":"policy","cause":{"Message":"","User":"Rafael Portela \u003crafael@cheesy.dev\u003e"},"spec":{"rafael-flux:deployment/go-microservice":{"add":{"automated":"true"},"remove":{}}}},"result":null}
