@@ -203,6 +203,7 @@ spec:
         - --git-user=cheesybot
         - --git-email=bot@cheesy.dev
         - --sync-garbage-collection=true
+        - --git-poll-interval=60s
 
         # Include these two to enable git commit signing
         # - --git-gpg-key-import=/root/gpg-import
