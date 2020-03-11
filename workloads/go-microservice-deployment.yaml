@@ -9,7 +9,7 @@ metadata:
   annotations:
     fluxcd.io/automated: 'true'
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: go-microservice
