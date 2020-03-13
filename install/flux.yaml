@@ -45,16 +45,6 @@ spec:
   selector:
     name: memcached
 ---
-# The service account, cluster roles, and cluster role binding are
-# only needed for Kubernetes with role-based access control (RBAC).
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  labels:
-    name: rafael-flux
-  name: rafael-flux
-  namespace: rafael-flux
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -74,7 +64,7 @@ spec:
       labels:
         name: flux
     spec:
-      serviceAccountName: rafael-flux
+      serviceAccountName: flux
       volumes:
       - name: git-key
         secret:
